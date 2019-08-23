@@ -10,3 +10,10 @@ import Foundation
 
 print("Hello, World!")
 
+var myTown = Town()
+myTown.printDescription()
+myTown.changePopulation(by: 700)
+
+let genericMonster = Monster()
+genericMonster.town = myTown
+genericMonster.terrorizeTown()
